@@ -16,7 +16,7 @@ public class main {
 		// Se definen todos los recursos en el try aquellos que implementen la interfaz "Closeable"
 		// lo cual hace es que cuando se salga del try (ya sea por el catch o por ejecucion normal) 
 		// se ejecute el metodo close() que esta declarado en la interfaz "Closeable"
-		try(BufferedWriter bw = new BufferedWriter(new FileWriter(new File("Archivos\\texto.txt"))))
+		try(BufferedWriter bw = new BufferedWriter(new FileWriter(new File("clase_06.09.16\\Archivos\\texto.txt"))))
 		{
 			bw.write("Hola pepe		11111	");
 			
@@ -28,14 +28,13 @@ public class main {
 		{
 		}
 		
-		try(BufferedReader br = new BufferedReader(new FileReader(new File("Archivos\\texto.txt")))) 
+		try(BufferedReader br = new BufferedReader(new FileReader(new File("clase_06.09.16\\Archivos\\texto.txt")))) 
 		{
 			
 			String linea;
-			while ((linea = br.readLine()) != null) {
-				
+			while ((linea = br.readLine()) != null) 
+			{
 				System.out.println(linea);
-				
 			}
 			
 		} 
