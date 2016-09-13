@@ -1,4 +1,4 @@
-package Patrones;
+package Singleton;
 
 public class Singleton {
 	

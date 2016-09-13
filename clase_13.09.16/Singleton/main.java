@@ -1,4 +1,4 @@
-package Patrones;
+package Singleton;
 
 public class main {
 
@@ -11,7 +11,6 @@ public class main {
 		System.out.println(s2.hashCode());
 		System.out.println(s1.equals(s2));
 		
-
 	}
 
 }
