@@ -1,0 +1,8 @@
+1_clase object
+2_clase String y Exception de negocio(clase que hereda de Exeption)
+3_
+Collection:
+	-Interfaz List (clase: ArrayList)(Hereda de Collection)
+	-Interfaz Set (Clases: hashSet)(Hereda de Collection)
+Interfaz Map;
+	
