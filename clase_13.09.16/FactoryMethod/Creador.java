@@ -2,7 +2,7 @@ package FactoryMethod;
 
 public class Creador {
 
-	public Auto crearAuto(String tipo) {
+	public static Auto crearAuto(String tipo) {
 		
 		switch (tipo) {
 		case "Sedan":
