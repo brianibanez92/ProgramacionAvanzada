@@ -18,7 +18,15 @@ public class main {
 		thread1.start();
 		thread2.start();
 		
-		System.out.println("Fin");
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		thread1.interrupt();
+		
+		//System.out.println("Fin");
 		
 		
 		
