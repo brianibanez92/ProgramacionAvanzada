@@ -6,7 +6,9 @@
 	<classpathentry kind="src" path="clase_13.09.16"/>
 	<classpathentry kind="src" path="clase_20.09.2016"/>
 	<classpathentry kind="src" path="clase_04.10.16"/>
+	<classpathentry kind="src" path="clase_11.10.2016"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="Y:/Programacion avanzada I/mysql-connector-java-5.1.23-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
