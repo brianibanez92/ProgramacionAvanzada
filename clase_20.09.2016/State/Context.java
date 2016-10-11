@@ -16,6 +16,7 @@ public class Context {
 		
 		switch (a.getEstado()) {
 		case Ingreso:
+			this.estado.cambiarEstado(a);
 			break;
 		case Regular:
 			break;

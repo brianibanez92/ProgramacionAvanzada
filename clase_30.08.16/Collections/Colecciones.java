@@ -33,6 +33,8 @@ public class Colecciones {
 		
 		System.out.println(personas.size());
 		
+		System.out.println(p1.equals(p2));
+		
 		
 		
 		
