@@ -3,6 +3,12 @@ package Ejercicio3;
 public class ManejadorString {
 	
 	// Imprimir la cantidad de caracteres que posee.
+	public int imprCantidadCaracteres2(String cadena) throws Exception
+	{
+		return cadena.length();
+	}
+	
+	// Imprimir la cantidad de caracteres que posee.
 	public int imprCantidadCaracteres(String cadena)
 	{
 		return cadena.length();

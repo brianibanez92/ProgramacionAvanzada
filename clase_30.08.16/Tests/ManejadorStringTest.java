@@ -27,7 +27,7 @@ public class ManejadorStringTest {
 				
 	}
 	
-	@Test()
+	@Test(expected=Exception.class)
 	public void TestcantidadCaracteresNull() 
 	{
 		try 
@@ -37,7 +37,8 @@ public class ManejadorStringTest {
 			
 		} catch (Exception e) 
 		{
-			Assert.fail("Fallo!!! : " + e.getMessage());
+			//Assert.fail("Fallo!!! : " + e.getMessage());
+			throw e;
 		}
 		
 	}

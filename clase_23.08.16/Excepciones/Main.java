@@ -2,9 +2,12 @@ package Excepciones;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Throwable {
 		
 		ManejoExcepciones me = new ManejoExcepciones();
+		
+		me.Metodo2();
+		
 		
 		try 
 		{

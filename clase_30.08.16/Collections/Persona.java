@@ -1,11 +1,30 @@
 package Collections;
 
-import org.hamcrest.core.IsInstanceOf;
-
+/**
+ * @author brian.ibanez
+ * @version 1.0
+ */
 public class Persona {
 
 	private String nombre;
 	private String apellido;
+	
+	public Persona()
+	{
+	}
+	
+	/**
+	 * @author brian.ibanez 
+	 * @version 1.0
+	 * @param nombre: nombre de la persona
+	 * @param apellido: apellido de la persona
+	 * 
+	 */
+	public Persona(String nombre, String apellido)
+	{
+		this.nombre= nombre;
+		this.apellido = apellido;
+	}
 	
 	public String getNombre() {
 		return nombre;
@@ -20,6 +39,12 @@ public class Persona {
 		this.apellido = apellido;
 	}
 	
+	/**
+	 * @author brian.ibanez
+	 * @version 1.0
+	 * @param obj: objeto que sera comparado
+	 * @return si es el mismo objeto se retornara true
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		
