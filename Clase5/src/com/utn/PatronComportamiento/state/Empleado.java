@@ -1,6 +1,6 @@
 package com.utn.PatronComportamiento.state;
 
-public class Empleado {
+public class Empleado{
     IEstado estado;
     String nombre;
     String apellido;
@@ -22,5 +22,6 @@ public class Empleado {
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
 	}
+
     
 }
