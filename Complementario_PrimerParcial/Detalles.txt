@@ -1,3 +1,4 @@
+//Diferencia entre jre y jdk
 //la clase de excepcion mas generica es Trowable y ademas los dos tipos de errores son las chequeable y las no chequeable
 //las 2 interfazes de las clases son List y set
 //Estudiar implementaciones de la interfaz List: LinkedList y ArraysList
