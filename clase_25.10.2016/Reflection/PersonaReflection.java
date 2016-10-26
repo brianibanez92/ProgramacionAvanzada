@@ -12,6 +12,12 @@ public class PersonaReflection
 	{
 	}
 	
+	public PersonaReflection(String name, String surname)
+	{
+		this.name = name;
+		this.surname = surname;
+	}
+	
 	public String getName()
 	{
 		return this.name;

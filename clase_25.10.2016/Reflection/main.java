@@ -7,9 +7,31 @@ public class main {
 
 	public static void main(String[] args) 
 	{
-
-		PersonaReflection pr = new PersonaReflection();
+		//PersonaReflection pr = new PersonaReflection();
 		
+		/*Constructor<?>[] constructors = PersonaReflection.class.getConstructors();
+		for (Constructor<?> c : constructors) 
+		{
+			try 
+			{
+				pr = (PersonaReflection) c.newInstance(null);
+			} 
+			catch (Exception e) 
+			{
+				e.printStackTrace();
+			}
+		}*/
+		
+		PersonaReflection pr = null;
+		try
+		{			
+			pr = (PersonaReflection) PersonaReflection.class.getConstructors()[0].newInstance(null);
+		} 
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+		}
+				
 		System.out.println("-------------- ATRIBUTOS -------------------");
 		Field [] fields = pr.getClass().getFields();
 		for (Field field : fields) 
