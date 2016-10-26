@@ -1,2 +1,9 @@
 //la clase de excepcion mas generica es Trowable y ademas los dos tipos de errores son las chequeable y las no chequeable
 //las 2 interfazes de las clases son List y set
+//Estudiar implementaciones de la interfaz List: LinkedList y ArraysList
+//JavaDoc a nivel de -clases hay que implementar con el autor y la version
+	             -A nivel de metodos implentar los parametros , la excepcion y lo que retorna
+//en los patrones de diseños estudiar la motivacion(El motivo en la cual se implemento) y como funciona coin los ejemplos que se dio en la clase
+//Estudiar un poco los metodos de la clase string
+//los test tiene que ser chequeado cuando tira una excepcion y cuando no (Aprender utilizar los metodos assertEquals y el metodo fail)
+//Patrones tomados hasta el momento fue el factoryMethod,Observer y el singleton.
