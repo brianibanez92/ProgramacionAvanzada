@@ -1,14 +1,12 @@
-package com.utn.anotaciones;
+package anotaciones;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target(ElementType.METHOD)
+@Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface TestMio{ 
-	int cantidad();
-	int cantidadDefault() default 1;
-	String nombreDefault() default "Default";
+public @interface Columna {
+	String nombre();
 }
