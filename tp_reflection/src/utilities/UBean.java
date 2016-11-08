@@ -4,8 +4,6 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.sun.org.apache.bcel.internal.classfile.Attribute;
-
 public class UBean 
 {
 
@@ -18,9 +16,15 @@ public class UBean
 	Setter del String dentro del Object.
 	c.  ejecutarGet(Object o, String att): devolverá el valor del atributo pasado por 
 	parámetro, ejecutando el getter dentro del objeto */
+	
 
 	public static List<Field> getAttributes (Object obj)
 	{
+		obj.getClass().getDeclaredFields();
+		
+		
+		
+		
 		return new ArrayList<Field>();
 	}
 	

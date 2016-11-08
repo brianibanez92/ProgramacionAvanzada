@@ -26,6 +26,9 @@ public class main {
 		try
 		{			
 			pr = (PersonaReflection) PersonaReflection.class.getConstructors()[0].newInstance(null);
+			pr.age = 1000;
+			pr.name = "Pepe";
+			pr.surname = "Pepon";
 		} 
 		catch (Exception e) 
 		{
@@ -37,6 +40,16 @@ public class main {
 		for (Field field : fields) 
 		{
 			System.out.println(field.getName());
+			try {
+				System.out.println(field.get(pr));
+				
+			} catch (IllegalArgumentException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IllegalAccessException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		
 		System.out.println("-------------- METODOS -------------------");
