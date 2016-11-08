@@ -21,6 +21,7 @@ public class Consultas {
 				}
 			}
 		}
+		
 		System.out.println("Tabla: "+tabla);
 		System.out.println("Columnas: "+columnas.substring(1));
 	}
