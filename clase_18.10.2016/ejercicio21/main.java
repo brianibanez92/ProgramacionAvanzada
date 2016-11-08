@@ -9,7 +9,7 @@ public class main {
 		AgregarPalabra runAgregarPalabra = new AgregarPalabra(runTomarPalabra);
 		
 		Thread t1 = new Thread(runAgregarPalabra, "HiloAgregar");
-		
+		t1.start();
 		
 		
 		
