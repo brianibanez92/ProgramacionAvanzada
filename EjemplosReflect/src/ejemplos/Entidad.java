@@ -6,15 +6,20 @@ public class Entidad {
 	private String otroAtributo;
 	private OtraClase otra;
 	
-	public Entidad(){}
+	public Entidad(){super();}
 
-	public Entidad(int id, String nombre, String otroAtributo, OtraClase otra) {
-		super();
+	public Entidad(int id, String nombre, String otroAtributo) {
+		this();
 		this.id = id;
 		this.nombre = nombre;
 		this.otroAtributo = otroAtributo;
+	}
+	
+	public Entidad(int id, String nombre, String otroAtributo, OtraClase otra) {
+		this(id,nombre,otroAtributo);
 		this.otra = otra;
 	}
+
 
 	public int getId() {
 		return id;
