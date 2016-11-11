@@ -12,6 +12,7 @@ public class App {
 		// TODO Ejemplo de la pag.57-58
 		OtraClase otra=new OtraClase();
 		Entidad entidad=new Entidad(5, "Julian", "ElPepo", otra);
+		
 		Field[] fields=entidad.getClass().getDeclaredFields();
 		
 		for(Field f:fields){
