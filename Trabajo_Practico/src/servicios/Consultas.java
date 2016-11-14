@@ -1,28 +1,41 @@
 package servicios;
 import java.lang.reflect.Field;
 
+import utilidades.DBORACLE;
+import utilidades.UBean;
 import anotaciones.Columna;
 import anotaciones.Tabla;
 
 public class Consultas {
 	public static void guardar(Object o){
-		Class c=o.getClass();
-		String tabla;
+		Class<? extends Object> c=o.getClass();
+		String tabla=getNameTable(c);
 		String columnas = "";
+		String valores = "";
 		
-		Tabla tab= (Tabla) c.getAnnotation(Tabla.class);
-		tabla=tab.nombre();
-		
-		for(Field m:c.getDeclaredFields()){
-			if(m.getAnnotation(Columna.class)!=null){
-				Columna colum=(Columna)m.getAnnotation(Columna.class);
-				if(colum.nombre()!=null){
-				  columnas+= ","+colum.nombre();
-				}
+		for(Field f:c.getDeclaredFields()){
+			if(f.getAnnotation(Columna.class)!=null){
+				  Columna colum=(Columna)f.getAnnotation(Columna.class);
+				  columnas+= ","+getNameColumn(f);
+				  valores+= ","+"'"+UBean.ejecutarGet(o, f.getName())+"'";
 			}
 		}
+		valores=valores.substring(1);
+		columnas=columnas.substring(1);
 		
-		System.out.println("Tabla: "+tabla);
-		System.out.println("Columnas: "+columnas.substring(1));
+		String query="INSERT INTO "+tabla+"("+columnas+")VALUES("+valores+")";
+		System.out.println(query);
+		DBORACLE.ejecutar(query);
+	}
+	
+	private static String getNameTable(Class clazz){
+		Tabla tab= (Tabla) clazz.getAnnotation(Tabla.class);
+		String tabla=tab.nombre().isEmpty()?clazz.getSimpleName():tab.nombre();
+		return tabla;
+	}
+	private static String getNameColumn(Field field){
+		Columna colum=(Columna)field.getAnnotation(Columna.class);
+		String columna=colum.nombre().isEmpty()?field.getName():colum.nombre();
+		return columna;
 	}
 }
