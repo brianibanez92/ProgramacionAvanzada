@@ -1,4 +1,4 @@
-package Threads;
+package Thread_Priority;
 
 public class MyRunnable implements Runnable {
 
