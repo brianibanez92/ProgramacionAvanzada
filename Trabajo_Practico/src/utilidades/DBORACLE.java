@@ -13,7 +13,7 @@ public class DBORACLE {
 					String url = "jdbc:oracle:thin:@localhost:1521/xe";
 					String user = "sistemaDB";
 					String pass = "sistemaDB"; 
-		            conexion=DriverManager.getConnection (url, user,pass);
+		            conexion=DriverManager.getConnection(url, user,pass);
 		        } catch (Exception e) {
 		            e.printStackTrace();
 		        }  
