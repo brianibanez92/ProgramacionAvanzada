@@ -23,6 +23,7 @@ public class Consultas {
 		valores=valores.substring(1);
 		columnas=columnas.substring(1);
 		
+		
 		String query="INSERT INTO "+tabla+"("+columnas+")VALUES("+valores+")";
 		System.out.println(query);
 		DBORACLE.ejecutar(query);
